@@ -52,3 +52,6 @@
     //テンプレートファイルのコピーに失敗した場合
     $ texinit xxxxx
     > Copy Error.
+
+    //成功時(メッセージは出ません)
+    $ texinit xxxxx
