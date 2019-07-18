@@ -29,8 +29,4 @@ if exist %1 (goto TRUE) else goto FALSE > nul 2>&1
     taskkill /im AcroRd32.exe > nul
     goto NOTKILL
 
-:CMPERROR
-    echo Compile Error.
-    goto END
-
 :END
