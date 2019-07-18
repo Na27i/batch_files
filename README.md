@@ -55,3 +55,7 @@
 
     //成功時(メッセージは出ません)
     $ texinit xxxxx
+
+## xe.bat
+texcmp.bat の XeLaTeX版です．  
+使用方法や仕様に変更はありません．
