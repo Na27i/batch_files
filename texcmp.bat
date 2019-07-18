@@ -16,7 +16,7 @@ copy nul EROOR.log
     goto END
 
 :NOTKILL
-    platex -interaction=nonstopmode %~n1.tex >> EROOR.log 2>&1
+    platex -interaction=nonstopmode %~n1.tex > EROOR.log 2>&1
     if not %ERRORLEVEL% == 0 goto CMPERROR
     platex %~n1.tex > nul 2>&1
     dvipdfmx %~n1.dvi > nul 2>&1
