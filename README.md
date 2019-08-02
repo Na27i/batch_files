@@ -45,7 +45,7 @@
     $ texinit xxxxx
     > No Templete File.
 
-    //すでに指定された名前のファイルある場合
+    //すでに指定された名前のファイルがある場合
     $ texinit xxxxx
     > Already Exists.
 
