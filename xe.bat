@@ -24,6 +24,7 @@ if exist %1 (goto TRUE) else goto FALSE > nul 2>&1
     rm %~n1.out > nul 2>&1
     rm %~n1.snm > nul 2>&1
     rm %~n1.toc > nul 2>&1
+    rm %~n1_log.tex > nul 2>&1
     START %~n1.pdf > nul
     goto END
 

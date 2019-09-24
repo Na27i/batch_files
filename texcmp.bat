@@ -29,6 +29,7 @@ copy nul EROOR.log
     rm %~n1.idx > nul 2>&1
     rm %~n1.ind > nul 2>&1
     rm %~n1.ilg > nul 2>&1
+    rm %~n1_log.txt > nul 2>&1
     rm EROOR.log > nul 2>&1
     START %~n1.pdf > nul
     echo Compile Sucess.
