@@ -20,17 +20,17 @@ copy nul EROOR.log
     if not %ERRORLEVEL% == 0 goto CMPERROR
     platex %~n1.tex > nul 2>&1
     dvipdfmx %~n1.dvi > nul 2>&1
-    rm %~n1.aux > nul 2>&1
-    rm %~n1.log > nul 2>&1
-    rm %~n1.dvi > nul 2>&1
-    rm %~n1.toc > nul 2>&1
-    rm %~n1.lot > nul 2>&1
-    rm %~n1.lof > nul 2>&1
-    rm %~n1.idx > nul 2>&1
-    rm %~n1.ind > nul 2>&1
-    rm %~n1.ilg > nul 2>&1
-    rm %~n1_log.txt > nul 2>&1
-    rm EROOR.log > nul 2>&1
+    del %~n1.aux > nul 2>&1
+    del %~n1.log > nul 2>&1
+    del %~n1.dvi > nul 2>&1
+    del %~n1.toc > nul 2>&1
+    del %~n1.lot > nul 2>&1
+    del %~n1.lof > nul 2>&1
+    del %~n1.idx > nul 2>&1
+    del %~n1.ind > nul 2>&1
+    del %~n1.ilg > nul 2>&1
+    del %~n1_log.txt > nul 2>&1
+    del EROOR.log > nul 2>&1
     START %~n1.pdf > nul
     echo Compile Sucess.
     goto END
