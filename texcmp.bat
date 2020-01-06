@@ -20,6 +20,7 @@ copy nul EROOR.log
     if not %ERRORLEVEL% == 0 goto CMPERROR
     pbibtex %~n1 > nul 2>&1
     platex %~n1.tex > nul 2>&1
+    platex %~n1.tex > nul 2>&1
     dvipdfmx %~n1.dvi > nul 2>&1
     del %~n1.aux > nul 2>&1
     del %~n1.log > nul 2>&1
