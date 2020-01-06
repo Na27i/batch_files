@@ -18,6 +18,7 @@ copy nul EROOR.log
 :NOTKILL
     platex -interaction=nonstopmode %~n1.tex > EROOR.log 2>&1
     if not %ERRORLEVEL% == 0 goto CMPERROR
+    pbibtex %~n1 > nul 2>&1
     platex %~n1.tex > nul 2>&1
     dvipdfmx %~n1.dvi > nul 2>&1
     del %~n1.aux > nul 2>&1
@@ -29,6 +30,8 @@ copy nul EROOR.log
     del %~n1.idx > nul 2>&1
     del %~n1.ind > nul 2>&1
     del %~n1.ilg > nul 2>&1
+    del %~n1.bbl > nul 2>&1
+    del %~n1.blg > nul 2>&1
     del %~n1_log.txt > nul 2>&1
     del EROOR.log > nul 2>&1
     START %~n1.pdf > nul
